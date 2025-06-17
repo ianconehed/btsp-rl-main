@@ -16,17 +16,17 @@ agent:
   batch_size: 64
   min_replay: 1000
   target_sync: 200
-  hidden_size: 64
+  hidden_size: 20
   buffer_capacity: 50000
 
 # Training ------------------------------------------------------
 train:
-  episodes: 500
+  episodes: 2000
   max_steps: 200
   eps_start: 1.0
   eps_end: 0.05
   eps_decay: 0.995
-  eval_interval: 1000
+  eval_interval: 100
   seed: 10
   render: false
 

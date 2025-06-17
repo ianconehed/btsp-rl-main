@@ -1,0 +1,16 @@
+{"time":"2025-06-17T12:29:06.2107491+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\ianco\\btsp-rl-main\\wandb\\run-20250617_122905-u568rfev\\logs\\debug-core.log"}
+{"time":"2025-06-17T12:29:06.5373641+01:00","level":"INFO","msg":"stream: created new stream","id":"u568rfev"}
+{"time":"2025-06-17T12:29:06.5373641+01:00","level":"INFO","msg":"stream: started","id":"u568rfev"}
+{"time":"2025-06-17T12:29:06.5384521+01:00","level":"INFO","msg":"sender: started","stream_id":"u568rfev"}
+{"time":"2025-06-17T12:29:06.5384521+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"u568rfev"}
+{"time":"2025-06-17T12:29:06.5384521+01:00","level":"INFO","msg":"handler: started","stream_id":"u568rfev"}
+{"time":"2025-06-17T12:29:06.7443611+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-17T12:29:35.2165741+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-17T12:29:35.2165741+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-17T12:29:36.1039231+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-17T12:29:36.2215793+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 285-505, summary, console lines 4-4","runtime_seconds":0.117147}],"total_operations":1}}
+{"time":"2025-06-17T12:29:36.498263+01:00","level":"INFO","msg":"stream: closing","id":"u568rfev"}
+{"time":"2025-06-17T12:29:36.498263+01:00","level":"INFO","msg":"handler: closed","stream_id":"u568rfev"}
+{"time":"2025-06-17T12:29:36.498263+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"u568rfev"}
+{"time":"2025-06-17T12:29:36.498263+01:00","level":"INFO","msg":"sender: closed","stream_id":"u568rfev"}
+{"time":"2025-06-17T12:29:36.498263+01:00","level":"INFO","msg":"stream: closed","id":"u568rfev"}

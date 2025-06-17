@@ -1,0 +1,23 @@
+Error executing job with overrides: []ncoding video...
+Traceback (most recent call last):
+  File "c:\Users\ianco\btsp-rl-main\train.py", line 122, in main
+    per_place_maps = pt.generate_place_maps(agent, per_env, include_walls=True)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ianco\btsp-rl-main\place_tuning.py", line 43, in generate_place_maps
+    activations = get_hidden_activations(agent, state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ianco\btsp-rl-main\place_tuning.py", line 19, in get_hidden_activations
+    x = agent.policy_net.net[0](state_t)  # Linear layer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\torch\nn\modules\module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\torch\nn\modules\module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x2 and 36x40)
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

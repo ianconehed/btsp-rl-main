@@ -1,0 +1,16 @@
+{"time":"2025-06-17T12:08:24.7138834+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\ianco\\btsp-rl-main\\wandb\\run-20250617_120824-rxi4os2m\\logs\\debug-core.log"}
+{"time":"2025-06-17T12:08:25.035351+01:00","level":"INFO","msg":"stream: created new stream","id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:25.035351+01:00","level":"INFO","msg":"stream: started","id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:25.035351+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:25.035351+01:00","level":"INFO","msg":"sender: started","stream_id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:25.035351+01:00","level":"INFO","msg":"handler: started","stream_id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:25.3260578+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-17T12:08:41.4288334+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-17T12:08:41.4288334+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-17T12:08:42.0053357+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-17T12:08:42.2010807+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-06-17T12:08:42.204123+01:00","level":"INFO","msg":"stream: closing","id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:42.204123+01:00","level":"INFO","msg":"handler: closed","stream_id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:42.204123+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:42.204123+01:00","level":"INFO","msg":"sender: closed","stream_id":"rxi4os2m"}
+{"time":"2025-06-17T12:08:42.204123+01:00","level":"INFO","msg":"stream: closed","id":"rxi4os2m"}

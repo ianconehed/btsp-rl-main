@@ -50,7 +50,10 @@ class GridMazeEnv(gym.Env):
     # ────────────────────────────────────────────────────────────── helpers ──
     def _get_obs(self):
         x, y = self.agent_pos
-        return np.array([x / (self.width - 1), y / (self.height - 1)], dtype=np.float32)
+        z = np.zeros(self.width*self.height)
+        z[x + y*self.height] = 1
+        # return np.array([x / (self.width - 1), y / (self.height - 1)], dtype=np.float32)
+        return z
 
     # ─────────────────────────────────────────────────────────── gym API ──
     def reset(self, *, seed=None, options=None):

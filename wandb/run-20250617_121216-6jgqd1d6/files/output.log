@@ -1,0 +1,12 @@
+c:\Users\ianco\btsp-rl-main\agents.py:80: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\bld\libtorch_1746251577579\work\torch\csrc\utils\tensor_new.cpp:257.)
+  s = torch.tensor(batch.state, dtype=torch.float32, device=self.device)
+Episode 50/500 | avgR₅₀: 0.20 | ε: 0.78
+Episode 100/500 | avgR₅₀: 0.56 | ε: 0.61
+Episode 150/500 | avgR₅₀: 0.80 | ε: 0.47
+Episode 200/500 | avgR₅₀: 0.84 | ε: 0.37
+Episode 250/500 | avgR₅₀: 0.80 | ε: 0.29
+Episode 300/500 | avgR₅₀: 0.76 | ε: 0.22
+Episode 350/500 | avgR₅₀: 0.74 | ε: 0.17
+Episode 400/500 | avgR₅₀: 0.80 | ε: 0.13
+Episode 450/500 | avgR₅₀: 0.90 | ε: 0.10
+Episode 500/500 | avgR₅₀: 0.94 | ε: 0.08

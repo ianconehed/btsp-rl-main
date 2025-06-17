@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":2},"_timestamp":1.7501606577553606e+09,"_runtime":2.0803174,"_step":50,"episode":1,"eval_reward":0,"eval_video":{"width":192,"height":192,"_type":"video-file","sha256":"7561587de12f1687d6ed2e4537b8195d77d6c5058fe6c198890f99f16f00b627","size":3327,"path":"media/videos/eval_video_0_7561587de12f1687d6ed.mp4"}}

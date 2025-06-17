@@ -1,0 +1,14 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "c:\Users\ianco\btsp-rl-main\train.py", line 82, in main
+    state, _ = train_env.reset(seed=None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ianco\btsp-rl-main\environments.py", line 64, in reset
+    return self._get_obs(), {}
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\ianco\btsp-rl-main\environments.py", line 53, in _get_obs
+    z = np.zeros(1,self.width*self.height)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cannot interpret '36' as a data type
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

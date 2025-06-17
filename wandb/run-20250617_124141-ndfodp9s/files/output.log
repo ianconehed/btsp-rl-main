@@ -1,0 +1,14 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "c:\Users\ianco\btsp-rl-main\train.py", line 106, in main
+    eval_reward, frames = evaluate_agent(
+                          ^^^^^^^^^^^^^^^
+  File "c:\Users\ianco\btsp-rl-main\train.py", line 24, in evaluate_agent
+    action = agent.act(state, eps=0.0)  # greedy
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ianco\btsp-rl-main\agents.py", line 66, in act
+    state_t = torch.as_tensor(
+              ^^^^^^^^^^^^^^^^
+TypeError: must be real number, not NoneType
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

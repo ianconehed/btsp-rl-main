@@ -1,0 +1,24 @@
+c:\Users\ianco\btsp-rl-main\agents.py:80: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\bld\libtorch_1746251577579\work\torch\csrc\utils\tensor_new.cpp:257.)
+  s = torch.tensor(batch.state, dtype=torch.float32, device=self.device)
+Episode 50/1000 | avgR₅₀: 0.20 | ε: 0.78
+Episode 100/1000 | avgR₅₀: 0.56 | ε: 0.61
+Episode 150/1000 | avgR₅₀: 0.80 | ε: 0.47
+Episode 200/1000 | avgR₅₀: 0.84 | ε: 0.37
+Episode 250/1000 | avgR₅₀: 0.80 | ε: 0.29
+Episode 300/1000 | avgR₅₀: 0.76 | ε: 0.22
+Episode 350/1000 | avgR₅₀: 0.74 | ε: 0.17
+Episode 400/1000 | avgR₅₀: 0.80 | ε: 0.13
+Episode 450/1000 | avgR₅₀: 0.90 | ε: 0.10
+Episode 500/1000 | avgR₅₀: 0.94 | ε: 0.08
+Episode 550/1000 | avgR₅₀: 0.90 | ε: 0.06
+Episode 600/1000 | avgR₅₀: 0.92 | ε: 0.05
+Episode 650/1000 | avgR₅₀: 1.00 | ε: 0.05
+Episode 700/1000 | avgR₅₀: 0.98 | ε: 0.05
+Episode 750/1000 | avgR₅₀: 0.96 | ε: 0.05
+Episode 800/1000 | avgR₅₀: 1.00 | ε: 0.05
+Episode 850/1000 | avgR₅₀: 0.98 | ε: 0.05
+Episode 900/1000 | avgR₅₀: 0.98 | ε: 0.05
+Episode 950/1000 | avgR₅₀: 0.94 | ε: 0.05
+m[2K[1mwandb[0m: [38;5;178m⣾[0m Encoding video...
+[eval] episode 1000: reward = 0.00
+Episode 1000/1000 | avgR₅₀: 0.90 | ε: 0.05

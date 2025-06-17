@@ -11,12 +11,14 @@ from replay_buffer import ReplayBuffer
 
 
 class DQN(nn.Module):
-    def __init__(self, state_dim: int, action_dim: int, hidden_size: int = 64):
+    def __init__(self, state_dim: int, action_dim: int, hidden_size: int = 20):
         super().__init__()
         # self.lin1 = nn.Linear(state_dim,hidden_size)
         # self.lin2 = nn.Linear(hidden_size,action_dim)
         self.net = nn.Sequential(
-            nn.Linear(state_dim, hidden_size),
+            nn.Linear(state_dim, 2),
+            nn.ReLU(),
+            nn.Linear(2,hidden_size),
             nn.ReLU(),
             nn.Linear(hidden_size, action_dim),
         )
@@ -39,7 +41,7 @@ class DQNAgent:
         batch_size: int = 64,
         min_replay: int = 1_000,
         target_sync: int = 200,
-        hidden_size: int = 64,
+        hidden_size: int = 20,
         buffer_capacity: int = 50_000,
     ):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

@@ -1,0 +1,16 @@
+{"time":"2025-06-17T12:21:24.4529079+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\ianco\\btsp-rl-main\\wandb\\run-20250617_122124-difwgulf\\logs\\debug-core.log"}
+{"time":"2025-06-17T12:21:24.7584205+01:00","level":"INFO","msg":"stream: created new stream","id":"difwgulf"}
+{"time":"2025-06-17T12:21:24.7584205+01:00","level":"INFO","msg":"stream: started","id":"difwgulf"}
+{"time":"2025-06-17T12:21:24.7590719+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"difwgulf"}
+{"time":"2025-06-17T12:21:24.7590719+01:00","level":"INFO","msg":"handler: started","stream_id":"difwgulf"}
+{"time":"2025-06-17T12:21:24.7590719+01:00","level":"INFO","msg":"sender: started","stream_id":"difwgulf"}
+{"time":"2025-06-17T12:21:24.9638518+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-17T12:21:54.3733545+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-17T12:21:54.3742673+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-17T12:21:54.9239911+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-17T12:21:55.1563712+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-06-17T12:21:55.1659516+01:00","level":"INFO","msg":"stream: closing","id":"difwgulf"}
+{"time":"2025-06-17T12:21:55.1659516+01:00","level":"INFO","msg":"handler: closed","stream_id":"difwgulf"}
+{"time":"2025-06-17T12:21:55.1659516+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"difwgulf"}
+{"time":"2025-06-17T12:21:55.1659516+01:00","level":"INFO","msg":"sender: closed","stream_id":"difwgulf"}
+{"time":"2025-06-17T12:21:55.1659516+01:00","level":"INFO","msg":"stream: closed","id":"difwgulf"}
