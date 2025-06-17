@@ -1,0 +1,15 @@
+{"time":"2025-06-10T12:31:23.0956399+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\ianco\\OneDrive - Nexus365\\Code_C\\btsp-rl-main\\wandb\\run-20250610_123122-jfh1nv1o\\logs\\debug-core.log"}
+{"time":"2025-06-10T12:31:26.3143515+01:00","level":"INFO","msg":"stream: created new stream","id":"jfh1nv1o"}
+{"time":"2025-06-10T12:31:26.3143515+01:00","level":"INFO","msg":"stream: started","id":"jfh1nv1o"}
+{"time":"2025-06-10T12:31:26.3143515+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"jfh1nv1o"}
+{"time":"2025-06-10T12:31:26.3143515+01:00","level":"INFO","msg":"handler: started","stream_id":"jfh1nv1o"}
+{"time":"2025-06-10T12:31:26.3143515+01:00","level":"INFO","msg":"sender: started","stream_id":"jfh1nv1o"}
+{"time":"2025-06-10T12:31:26.6224682+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-10T12:32:18.7238022+01:00","level":"INFO","msg":"stream: closing","id":"jfh1nv1o"}
+{"time":"2025-06-10T12:32:18.7238022+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-10T12:32:18.7238022+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-10T12:32:19.1453131+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-10T12:32:19.3553607+01:00","level":"INFO","msg":"handler: closed","stream_id":"jfh1nv1o"}
+{"time":"2025-06-10T12:32:19.3553607+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jfh1nv1o"}
+{"time":"2025-06-10T12:32:19.3553607+01:00","level":"INFO","msg":"sender: closed","stream_id":"jfh1nv1o"}
+{"time":"2025-06-10T12:32:19.3553607+01:00","level":"INFO","msg":"stream: closed","id":"jfh1nv1o"}

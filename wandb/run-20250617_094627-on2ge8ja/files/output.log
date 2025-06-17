@@ -1,0 +1,13 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "c:\Users\ianco\OneDrive - Nexus365\Code_C\btsp-rl-main\train.py", line 83, in main
+    action = agent.act(state, eps)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ianco\OneDrive - Nexus365\Code_C\btsp-rl-main\agents.py", line 64, in act
+    return random.randrange(self.policy_net.net[-1].out_features)
+                            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\torch\nn\modules\module.py", line 1940, in __getattr__
+    raise AttributeError(
+AttributeError: 'DQN' object has no attribute 'net'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

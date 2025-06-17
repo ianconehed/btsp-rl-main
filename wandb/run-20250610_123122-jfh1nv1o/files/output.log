@@ -1,0 +1,71 @@
+c:\Users\ianco\OneDrive - Nexus365\Code_C\btsp-rl-main\agents.py:75: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\bld\libtorch_1748472047040\work\torch\csrc\utils\tensor_new.cpp:257.)
+  s = torch.tensor(batch.state, dtype=torch.float32, device=self.device)
+Episode 50/5000 | avgR₅₀: 0.30 | ε: 0.78
+Episode 100/5000 | avgR₅₀: 0.38 | ε: 0.61
+Episode 150/5000 | avgR₅₀: 0.02 | ε: 0.47
+Episode 200/5000 | avgR₅₀: 0.00 | ε: 0.37
+Episode 250/5000 | avgR₅₀: 0.00 | ε: 0.29
+Episode 300/5000 | avgR₅₀: 0.16 | ε: 0.22
+Episode 350/5000 | avgR₅₀: 0.68 | ε: 0.17
+Episode 400/5000 | avgR₅₀: 0.96 | ε: 0.13
+Episode 450/5000 | avgR₅₀: 1.00 | ε: 0.10
+Episode 500/5000 | avgR₅₀: 0.98 | ε: 0.08
+Episode 550/5000 | avgR₅₀: 0.98 | ε: 0.06
+Episode 600/5000 | avgR₅₀: 0.92 | ε: 0.05
+Episode 650/5000 | avgR₅₀: 0.88 | ε: 0.05
+Episode 700/5000 | avgR₅₀: 0.90 | ε: 0.05
+Episode 750/5000 | avgR₅₀: 0.92 | ε: 0.05
+Episode 800/5000 | avgR₅₀: 0.98 | ε: 0.05
+Episode 850/5000 | avgR₅₀: 0.98 | ε: 0.05
+Episode 900/5000 | avgR₅₀: 0.96 | ε: 0.05
+Episode 950/5000 | avgR₅₀: 0.84 | ε: 0.05
+Error executing job with overrides: []ncoding video...
+Traceback (most recent call last):
+  File "c:\Users\ianco\OneDrive - Nexus365\Code_C\btsp-rl-main\train.py", line 112, in main
+    video = wandb.Video(video_array, fps=30, format="mp4")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\wandb\sdk\data_types\video.py", line 170, in __init__
+    printer_asyncio.run_async_with_spinner(
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\wandb\sdk\lib\printer_asyncio.py", line 46, in run_async_with_spinner
+    return asyncio_compat.run(_loop_run_with_spinner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 30, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 74, in run
+    return asyncio.run(self._run_or_cancel(fn))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\wandb\sdk\lib\asyncio_compat.py", line 98, in _run_or_cancel
+    return fn_task.result()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\wandb\sdk\lib\printer_asyncio.py", line 42, in _loop_run_with_spinner
+    res = await asyncio.get_running_loop().run_in_executor(None, func)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\wandb\sdk\data_types\video.py", line 178, in encode
+    mpy = util.get_module(
+          ^^^^^^^^^^^^^^^^
+  File "C:\Users\ianco\anaconda3\envs\dabal_meta_RL\Lib\site-packages\wandb\util.py", line 254, in get_module
+    raise wandb.Error(required)
+wandb.errors.errors.Error: wandb.Video requires moviepy when passing raw data. Install with "pip install wandb[media]"
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
