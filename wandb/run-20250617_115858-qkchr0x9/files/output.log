@@ -1,0 +1,8 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "c:\Users\ianco\btsp-rl-main\train.py", line 158, in main
+    final_place_maps = generate_place_maps(agent, final_env, include_walls=True)
+                       ^^^^^^^^^^^^^^^^^^^
+NameError: name 'generate_place_maps' is not defined
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

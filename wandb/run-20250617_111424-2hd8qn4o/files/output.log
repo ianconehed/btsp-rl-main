@@ -1,0 +1,11 @@
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "c:\Users\ianco\btsp-rl-main\train.py", line 83, in main
+    action = agent.act(state, eps)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ianco\btsp-rl-main\agents.py", line 69, in act
+    return int(self.policy_net(state_t).argmax())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'argmax'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

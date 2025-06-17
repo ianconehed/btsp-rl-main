@@ -32,7 +32,7 @@ train:
 
 # Logging -------------------------------------------------------
 wandb:
-  enabled: true    # set false to disable Weights & Biases
+  enabled: true   # set false to disable Weights & Biases
   project: meta_BTSP_RL
   entity: conehed
   group: rlcone

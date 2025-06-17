@@ -6,6 +6,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
+
 from replay_buffer import ReplayBuffer
 
 
@@ -21,7 +22,7 @@ class DQN(nn.Module):
         )
 
     def forward(self, x):
-        # return self.net(x)
+        return self.net(x)
         # x = self.lin1(x)
         # x = nn.ReLU(x)
         # x = self.lin2(x)

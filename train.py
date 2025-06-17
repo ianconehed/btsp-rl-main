@@ -4,10 +4,12 @@ from omegaconf import DictConfig, OmegaConf
 import hydra
 import numpy as np
 import wandb
+import matplotlib.pyplot as plt
 
 from agents import DQNAgent
 from environments import GridMazeEnv
 from utils import set_seed
+import place_tuning as pt
 
 
 def evaluate_agent(eval_env_ctor, agent, max_steps, record_video=False):
@@ -117,27 +119,27 @@ def main(cfg: DictConfig):
                 )
             print(f"[eval] episode {ep}: reward = {eval_reward:.2f}")
 
-            activation = {}
-            def getActivation(name):
-            # the hook signature
-                def hook(model, input, output):
-                    activation[name] = output.detach()
-                return hook
+            # activation = {}
+            # def getActivation(name):
+            # # the hook signature
+            #     def hook(model, input, output):
+            #         activation[name] = output.detach()
+            #     return hook
 
-            # register forward hooks on the layers of choice
-            h1 = model.avgpool.register_forward_hook(getActivation('avgpool'))
-            h2 = model.maxpool.register_forward_hook(getActivation('maxpool'))
-            h3 = model.layer3[0].downsample[1].register_forward_hook(getActivation('comp'))
+            # # register forward hooks on the layers of choice
+            # h1 = model.avgpool.register_forward_hook(getActivation('avgpool'))
+            # h2 = model.maxpool.register_forward_hook(getActivation('maxpool'))
+            # h3 = model.layer3[0].downsample[1].register_forward_hook(getActivation('comp'))
 
-            # forward pass -- getting the outputs
-            out = model(X)
+            # # forward pass -- getting the outputs
+            # out = model(X)
 
-            print(activation)
+            # print(activation)
 
-            # detach the hooks
-            h1.remove()
-            h2.remove()
-            h3.remove()
+            # # detach the hooks
+            # h1.remove()
+            # h2.remove()
+            # h3.remove()
             
 
         # ── Logging ──────────────────────────────────────────────────────────
@@ -148,6 +150,26 @@ def main(cfg: DictConfig):
             print(
                 f"Episode {ep}/{cfg.train.episodes} | avgR₅₀: {avg50:.2f} | ε: {eps:.2f}"
             )
+
+
+         # ── Final place map visualization ────────────────────────────────────────
+        if cfg.wandb.enabled:
+            final_env = eval_env_ctor()
+            final_place_maps = pt.generate_place_maps(agent, final_env, include_walls=True)
+            
+            # Show all units if there are more than 16
+            if cfg.agent.hidden_size > 16:
+                all_figs = pt.visualize_all_units_grid(final_place_maps, final_env)
+                for i, fig in enumerate(all_figs):
+                    wandb.log({f"final_place_maps_batch_{i}": wandb.Image(fig)})
+                    plt.close(fig)
+            else:
+                final_fig = pt.visualize_place_maps(final_place_maps, final_env)
+                wandb.log({"final_place_maps": wandb.Image(final_fig)})
+                plt.close(final_fig)
+            
+            final_env.close()
+            # wandb.finish()    
 
     if cfg.wandb.enabled:
         wandb.finish()
