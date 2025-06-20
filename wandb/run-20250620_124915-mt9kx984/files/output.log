@@ -1,0 +1,64 @@
+c:\Users\ianco\btsp-rl-main\agents.py:128: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\bld\libtorch_1746251577579\work\torch\csrc\utils\tensor_new.cpp:257.)
+[eval] episode 1: reward = 0.00
+  s = torch.tensor(batch.state, dtype=torch.float32, device=self.device)
+Episode 50/2000 | avgR₅₀: 0.16 | ε: 0.78
+m[2K[1mwandb[0m: [38;5;178m⢿[0m Encoding video...
+[eval] episode 100: reward = 0.00
+Episode 100/2000 | avgR₅₀: 0.32 | ε: 0.61
+Episode 150/2000 | avgR₅₀: 0.40 | ε: 0.47
+[eval] episode 200: reward = 0.00
+Episode 200/2000 | avgR₅₀: 0.72 | ε: 0.37
+Episode 250/2000 | avgR₅₀: 0.62 | ε: 0.29
+[eval] episode 300: reward = 0.00
+Episode 300/2000 | avgR₅₀: 0.70 | ε: 0.22
+Episode 350/2000 | avgR₅₀: 0.72 | ε: 0.17
+[eval] episode 400: reward = 0.00
+Episode 400/2000 | avgR₅₀: 0.84 | ε: 0.13
+Episode 450/2000 | avgR₅₀: 0.82 | ε: 0.10
+[eval] episode 500: reward = 0.00
+Episode 500/2000 | avgR₅₀: 0.72 | ε: 0.08
+Episode 550/2000 | avgR₅₀: 0.72 | ε: 0.06
+[eval] episode 600: reward = 0.00
+Episode 600/2000 | avgR₅₀: 0.58 | ε: 0.05
+Episode 650/2000 | avgR₅₀: 0.50 | ε: 0.05
+[eval] episode 700: reward = 0.00
+Episode 700/2000 | avgR₅₀: 0.42 | ε: 0.05
+Episode 750/2000 | avgR₅₀: 0.56 | ε: 0.05
+[eval] episode 800: reward = 0.00
+Episode 800/2000 | avgR₅₀: 0.72 | ε: 0.05
+Episode 850/2000 | avgR₅₀: 0.86 | ε: 0.05
+[eval] episode 900: reward = 1.00
+Episode 900/2000 | avgR₅₀: 0.96 | ε: 0.05
+Episode 950/2000 | avgR₅₀: 0.92 | ε: 0.05
+[eval] episode 1000: reward = 0.00
+Episode 1000/2000 | avgR₅₀: 0.98 | ε: 0.05
+Episode 1050/2000 | avgR₅₀: 0.90 | ε: 0.05
+[eval] episode 1100: reward = 0.00
+Episode 1100/2000 | avgR₅₀: 0.88 | ε: 0.05
+Episode 1150/2000 | avgR₅₀: 0.96 | ε: 0.05
+[eval] episode 1200: reward = 0.00
+Episode 1200/2000 | avgR₅₀: 0.98 | ε: 0.05
+Episode 1250/2000 | avgR₅₀: 0.98 | ε: 0.05
+[eval] episode 1300: reward = 1.00
+Episode 1300/2000 | avgR₅₀: 0.98 | ε: 0.05
+Episode 1350/2000 | avgR₅₀: 1.00 | ε: 0.05
+[eval] episode 1400: reward = 1.00
+Episode 1400/2000 | avgR₅₀: 1.00 | ε: 0.05
+Episode 1450/2000 | avgR₅₀: 1.00 | ε: 0.05
+[eval] episode 1500: reward = 1.00
+Episode 1500/2000 | avgR₅₀: 1.00 | ε: 0.05
+Episode 1550/2000 | avgR₅₀: 0.98 | ε: 0.05
+[eval] episode 1600: reward = 1.00
+Episode 1600/2000 | avgR₅₀: 1.00 | ε: 0.05
+Episode 1650/2000 | avgR₅₀: 1.00 | ε: 0.05
+[eval] episode 1700: reward = 1.00
+Episode 1700/2000 | avgR₅₀: 1.00 | ε: 0.05
+Episode 1750/2000 | avgR₅₀: 1.00 | ε: 0.05
+[eval] episode 1800: reward = 1.00
+Episode 1800/2000 | avgR₅₀: 1.00 | ε: 0.05
+Episode 1850/2000 | avgR₅₀: 1.00 | ε: 0.05
+[eval] episode 1900: reward = 1.00
+Episode 1900/2000 | avgR₅₀: 1.00 | ε: 0.05
+Episode 1950/2000 | avgR₅₀: 1.00 | ε: 0.05
+[eval] episode 2000: reward = 0.00
+Episode 2000/2000 | avgR₅₀: 1.00 | ε: 0.05

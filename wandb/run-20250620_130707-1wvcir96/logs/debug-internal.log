@@ -1,0 +1,16 @@
+{"time":"2025-06-20T13:07:07.5245992+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\ianco\\btsp-rl-main\\wandb\\run-20250620_130707-1wvcir96\\logs\\debug-core.log"}
+{"time":"2025-06-20T13:07:07.8521493+01:00","level":"INFO","msg":"stream: created new stream","id":"1wvcir96"}
+{"time":"2025-06-20T13:07:07.8521493+01:00","level":"INFO","msg":"stream: started","id":"1wvcir96"}
+{"time":"2025-06-20T13:07:07.8521493+01:00","level":"INFO","msg":"handler: started","stream_id":"1wvcir96"}
+{"time":"2025-06-20T13:07:07.8521493+01:00","level":"INFO","msg":"sender: started","stream_id":"1wvcir96"}
+{"time":"2025-06-20T13:07:07.8521493+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"1wvcir96"}
+{"time":"2025-06-20T13:07:08.1544457+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-20T13:10:37.5163695+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-20T13:10:37.5163695+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-20T13:10:38.3265437+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-20T13:10:38.5211549+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 1736-2002, summary, console lines 55-63","runtime_seconds":0.1941002}],"total_operations":1}}
+{"time":"2025-06-20T13:10:38.6965483+01:00","level":"INFO","msg":"stream: closing","id":"1wvcir96"}
+{"time":"2025-06-20T13:10:38.6965483+01:00","level":"INFO","msg":"handler: closed","stream_id":"1wvcir96"}
+{"time":"2025-06-20T13:10:38.6965483+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1wvcir96"}
+{"time":"2025-06-20T13:10:38.6965483+01:00","level":"INFO","msg":"sender: closed","stream_id":"1wvcir96"}
+{"time":"2025-06-20T13:10:38.6965483+01:00","level":"INFO","msg":"stream: closed","id":"1wvcir96"}

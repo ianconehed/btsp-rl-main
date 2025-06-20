@@ -1,0 +1,16 @@
+{"time":"2025-06-19T10:14:01.2303086+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\ianco\\btsp-rl-main\\wandb\\run-20250619_101400-vpb4khau\\logs\\debug-core.log"}
+{"time":"2025-06-19T10:14:01.5227223+01:00","level":"INFO","msg":"stream: created new stream","id":"vpb4khau"}
+{"time":"2025-06-19T10:14:01.5227223+01:00","level":"INFO","msg":"stream: started","id":"vpb4khau"}
+{"time":"2025-06-19T10:14:01.5227223+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"vpb4khau"}
+{"time":"2025-06-19T10:14:01.5227223+01:00","level":"INFO","msg":"handler: started","stream_id":"vpb4khau"}
+{"time":"2025-06-19T10:14:01.5227223+01:00","level":"INFO","msg":"sender: started","stream_id":"vpb4khau"}
+{"time":"2025-06-19T10:14:01.822806+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-19T10:15:47.4749303+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-19T10:15:47.4749303+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-19T10:15:48.0123546+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-19T10:15:48.2141545+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-06-19T10:15:48.2164501+01:00","level":"INFO","msg":"stream: closing","id":"vpb4khau"}
+{"time":"2025-06-19T10:15:48.2164501+01:00","level":"INFO","msg":"handler: closed","stream_id":"vpb4khau"}
+{"time":"2025-06-19T10:15:48.2164501+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vpb4khau"}
+{"time":"2025-06-19T10:15:48.2164501+01:00","level":"INFO","msg":"sender: closed","stream_id":"vpb4khau"}
+{"time":"2025-06-19T10:15:48.21706+01:00","level":"INFO","msg":"stream: closed","id":"vpb4khau"}

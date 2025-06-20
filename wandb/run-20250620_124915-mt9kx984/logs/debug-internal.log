@@ -1,0 +1,16 @@
+{"time":"2025-06-20T12:49:16.2800766+01:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\ianco\\btsp-rl-main\\wandb\\run-20250620_124915-mt9kx984\\logs\\debug-core.log"}
+{"time":"2025-06-20T12:49:16.6107084+01:00","level":"INFO","msg":"stream: created new stream","id":"mt9kx984"}
+{"time":"2025-06-20T12:49:16.6107084+01:00","level":"INFO","msg":"stream: started","id":"mt9kx984"}
+{"time":"2025-06-20T12:49:16.6112368+01:00","level":"INFO","msg":"sender: started","stream_id":"mt9kx984"}
+{"time":"2025-06-20T12:49:16.6112368+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"mt9kx984"}
+{"time":"2025-06-20T12:49:16.6112368+01:00","level":"INFO","msg":"handler: started","stream_id":"mt9kx984"}
+{"time":"2025-06-20T12:49:16.9119417+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-20T12:52:15.5787617+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-20T12:52:15.5787617+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-20T12:52:16.2111208+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-20T12:52:16.5617638+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-06-20T12:52:16.564601+01:00","level":"INFO","msg":"stream: closing","id":"mt9kx984"}
+{"time":"2025-06-20T12:52:16.564601+01:00","level":"INFO","msg":"handler: closed","stream_id":"mt9kx984"}
+{"time":"2025-06-20T12:52:16.564601+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"mt9kx984"}
+{"time":"2025-06-20T12:52:16.564601+01:00","level":"INFO","msg":"sender: closed","stream_id":"mt9kx984"}
+{"time":"2025-06-20T12:52:16.564601+01:00","level":"INFO","msg":"stream: closed","id":"mt9kx984"}

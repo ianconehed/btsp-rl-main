@@ -112,21 +112,45 @@ def main(cfg: DictConfig):
                 # Must be uint8 format
                 video_array = video_array.astype(np.uint8)
                 video = wandb.Video(video_array, fps=30, format="mp4")
-                # video = wandb.Video(np.stack(frames), fps=30, format="gif")
-                wandb.log(
-                    {"episode": ep, "eval_reward": eval_reward, "eval_video": video},
-                    step=agent.total_steps,
+                
+                # Create eval environment for place field visualizations
+                eval_env = eval_env_ctor()
+                
+                # Generate bottleneck place maps (2 units)
+                bottleneck_place_maps = pt.generate_place_maps(
+                    agent, eval_env, layer='bottleneck', include_walls=True
                 )
-                # place field vis
-                per_env = eval_env_ctor()
-                per_place_maps = pt.generate_place_maps(agent, per_env, include_walls=True)
+                bottleneck_fig = pt.visualize_place_maps(
+                    bottleneck_place_maps, eval_env, 
+                    figsize=(8, 4),
+                    title='Bottleneck Layer Place Maps'
+                )
                 
-                # Show all units
-                per_fig = pt.visualize_place_maps(per_place_maps, per_env)
-                wandb.log({"place_maps": wandb.Image(per_fig)})
-                plt.close(per_fig)
+                # Generate hidden layer place maps (hidden_size units)
+                hidden_place_maps = pt.generate_place_maps(
+                    agent, eval_env, layer='hidden', include_walls=True
+                )
+                # Show up to 16 units for hidden layer
+                hidden_fig = pt.visualize_place_maps(
+                    hidden_place_maps, eval_env, 
+                    num_units_to_show=min(16, cfg.agent.hidden_size),
+                    figsize=(12, 12),
+                    title='Hidden Layer Place Maps'
+                )
                 
-                per_env.close()
+                # Log everything
+                wandb.log({
+                    "episode": ep, 
+                    "eval_reward": eval_reward, 
+                    "eval_video": video,
+                    "bottleneck_place_maps": wandb.Image(bottleneck_fig),
+                    "hidden_place_maps": wandb.Image(hidden_fig),
+                }, step=agent.total_steps)
+                
+                plt.close(bottleneck_fig)
+                plt.close(hidden_fig)
+                eval_env.close()
+                
             print(f"[eval] episode {ep}: reward = {eval_reward:.2f}")
             
 
